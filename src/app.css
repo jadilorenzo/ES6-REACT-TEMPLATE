@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply w-full h-screen text-white bg-slate-700 text-gray-200;
+}
+
+.main {
+    @apply m-auto w-full flex justify-center align-middle h-screen;
+}
+
+.title {
+    @apply block h-min;
+    margin-top: calc(50vh - 120px);
+}
+
+.char {
+    text-shadow: rgb(19, 26, 38) 5px 5px;
+    @apply inline text-5xl font-bold;
+}
+
+.char-up {
+    @apply -translate-y-2 inline-block;
+    transition: ease-in 50ms;
+    text-shadow: rgb(19, 26, 38) 7px 7px;
+}
+
+.motto {
+    @apply text-xl;
+}
+
+.title-text {
+    @apply text-7xl font-bold;
+}
